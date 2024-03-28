@@ -1,9 +1,12 @@
-import {Button as NextButton, ButtonProps} from "@nextui-org/react";
+import {Button as NextButton, ButtonProps, Tooltip} from "@nextui-org/react";
 
-export const Button = ({...props}: ButtonProps) => {
-  return (
-    <NextButton
-      {...props}
-    />
-  )
-}
+export const Button = (props: ButtonProps, tooltipContent?: string) => (
+  <div>
+    <Tooltip
+      isDisabled={!tooltipContent}
+      content={tooltipContent}
+    >
+      <NextButton {...props} />
+    </Tooltip>
+  </div>
+)
