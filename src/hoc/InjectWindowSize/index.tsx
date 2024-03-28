@@ -1,6 +1,6 @@
 import React, {useLayoutEffect, useState} from "react";
 
-export type InjectWindowSize = {
+export type InjectWindowSizeType = {
   height: number,
   width: number,
   breakpointStep: string,
@@ -13,8 +13,8 @@ export type InjectWindowSize = {
 }
 
 export const injectWindowSize =
-  (WrappedComponent: React.ComponentType<InjectWindowSize>) =>
-    (props: InjectWindowSize) => {
+  (WrappedComponent: React.ComponentType<InjectWindowSizeType>) =>
+    (props: InjectWindowSizeType) => {
       const breakpointSteps = [
         'xs',
         'sm',

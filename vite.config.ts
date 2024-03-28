@@ -12,7 +12,11 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/components/index.tsx'),
+      entry: [
+        path.resolve(__dirname, './src/components.tsx'),
+        path.resolve(__dirname, './src/hoc.tsx'),
+        path.resolve(__dirname, './src/nextui.tsx'),
+      ],
       name: "MyEduReactUI",
       fileName: `myedu-react-ui`
     },
@@ -28,3 +32,4 @@ export default defineConfig({
   },
   plugins: [react(), dts({rollupTypes: true})],
 })
+

@@ -1,1 +1,1 @@
-export * from "./injectWindowSize";
+export * from "./InjectWindowSize";
