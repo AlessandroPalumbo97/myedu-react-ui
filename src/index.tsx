@@ -1,6 +1,8 @@
 export * from '@nextui-org/react'
 
-export * from "./hoc";
+export {
+  injectWindowSize,
+} from "./hoc";
 
 export {
   Button,
