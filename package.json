@@ -1,7 +1,7 @@
 {
-  "name": "myedu-react-ui",
+  "name": "@myedu/react-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "files": ["dist"],
   "main": "dist/myedu-react-ui.umd.cjs",
