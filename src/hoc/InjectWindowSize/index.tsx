@@ -13,7 +13,7 @@ export type InjectWindowSizeType = {
 }
 
 export const injectWindowSize =
-  (WrappedComponent: React.ComponentType<InjectWindowSizeType>) =>
+  (WrappedComponent: React.ComponentType<any> | React.FunctionComponent<any>) =>
     (props: InjectWindowSizeType) => {
       const breakpointSteps = [
         'xs',
