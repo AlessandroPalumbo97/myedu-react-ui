@@ -12,11 +12,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: [
-        path.resolve(__dirname, './src/components.tsx'),
-        path.resolve(__dirname, './src/hoc.tsx'),
-        path.resolve(__dirname, './src/nextui.tsx'),
-      ],
+      entry: path.resolve(__dirname, './src/index.ts'),
       name: "MyEduReactUI",
       fileName: `myedu-react-ui`
     },
